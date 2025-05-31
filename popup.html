@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Discord Token Login</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icons/icon48.png" alt="Discord Logo" class="logo">
+            <span class="title">Discord Login</span>
+            <button id="closeButton" class="close-button" title="Close">&times;</button>
+        </div>
+        <div class="content">
+            <label for="tokenInput" class="label">Enter Discord Token</label>
+            <input type="password" id="tokenInput" class="input-field" placeholder="Your authentication token">
+            <div id="errorMessage" class="error-message"></div>
+            <button id="loginButton" class="login-button">Login</button>
+        </div>
+        <div class="warning">
+            Warning: Using tokens is risky and against Discord ToS.
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
+

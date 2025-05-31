@@ -1,0 +1,120 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #2C2F33; /* Discord dark grey */
+    color: #FFFFFF; /* White text */
+    margin: 0;
+    padding: 0;
+    width: 300px; /* Fixed width for the popup */
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #23272A; /* Slightly darker grey for header */
+    padding: 8px 12px;
+    border-bottom: 1px solid #1a1c1e;
+}
+
+.logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: bold;
+    flex-grow: 1; /* Pushes close button to the right */
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: #dcddde; /* Light grey for close icon */
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 5px;
+    line-height: 1;
+}
+
+.close-button:hover {
+    color: #FFFFFF;
+}
+
+.content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 12px;
+    color: #b9bbbe; /* Discord grey text */
+    margin-bottom: 5px;
+}
+
+.input-field {
+    background-color: #202225; /* Darker input background */
+    border: 1px solid #1a1c1e;
+    border-radius: 3px;
+    color: #dcddde;
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: calc(100% - 22px); /* Account for padding and border */
+}
+
+.input-field::placeholder {
+    color: #72767d;
+}
+
+.input-field.error {
+    border-color: #f04747; /* Discord red for error */
+    box-shadow: 0 0 0 1px #f04747;
+}
+
+.login-button {
+    background-color: #5865F2; /* Discord blurple */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-align: center;
+}
+
+.login-button:hover {
+    background-color: #4752C4; /* Darker blurple on hover */
+}
+
+.login-button:disabled {
+    background-color: #4f545c; /* Disabled state color */
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #f04747; /* Discord red */
+    font-size: 12px;
+    margin-bottom: 10px;
+    min-height: 15px; /* Reserve space even when empty */
+    text-align: center;
+}
+
+.warning {
+    background-color: #faa61a; /* Discord yellow/orange for warning */
+    color: #2e3338;
+    font-size: 11px;
+    padding: 8px 15px;
+    text-align: center;
+    border-top: 1px solid #1a1c1e;
+}
+
