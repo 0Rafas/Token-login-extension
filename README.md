@@ -60,7 +60,7 @@ The developer does **not** endorse or support any malicious activities conducted
 
 ## 👤 Credits
 
-Developed by [RafasX4](https://github.com/RafasX4).
+Developed by [0Rafas](https://github.com/0Rafas).
 
 ---
 
